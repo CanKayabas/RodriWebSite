@@ -1,0 +1,379 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    background-color: #121212;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.topnav {
+    border-radius: 22px;
+    background-color: #171622;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+    z-index: 900;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    border-radius: 8px;
+    float: left;
+    color: #d30c26;
+    background-color: #1c1b2793;
+    text-shadow: 0px 0px 5px #d30c26;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.4s;
+    z-index: 900;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    border-radius: 8px;
+    background-color: #1c1b27;
+    color: #171622cc;
+    z-index: 900;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    border-radius: 8px;
+    background-color: #1c1b27;
+    color: #d30c26;
+    z-index: 900;
+  }
+
+  /* Arama Kutusu (SearchBox)'un Başlangıcı. */
+
+.searchbox {
+  z-index: 900;
+}
+
+.box{
+  width: 300px;
+  padding-bottom: 50px;
+  position: absolute;
+  left: 88.3%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 900;
+}
+
+.searchtext{
+  width: 300px;
+}
+
+.box input[type = "text"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #d30c26;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: #d30c26;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus{
+  width: 280px;
+  border-color: #94071a;
+}
+/* Arama Kutusu (SearchBox)'un Bitişi. */
+
+.ind3Picture{
+    right: 250px;
+    top: 100px;
+  }
+  
+  #img{
+    height: 300px;
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    left: 30px;
+    top: 50px;
+    box-shadow: 0px 0px 10px 5px black;
+  }
+  #imgtwo{
+    height: 40px;
+    position: relative;
+    width: 40px;
+    border-radius: 20px;
+    left: 10px;
+    color: #d30c26;
+    bottom: 10px;
+    float:left;
+    margin-right: 20px;
+  }
+  
+  #catalog{
+    top: -240px;
+    left: 100px;
+  }
+
+  #title{
+    font-size: 35px;
+    position: relative;
+    color: #d30c26;
+    text-shadow: 2px 2px 20px #d30c26;
+    left: 350px;
+    bottom: 260px;
+  }
+  #titletwo{
+    font-size: 25px;
+    position: relative;
+    color: #4f4e5f;
+    text-shadow: 2px 2px 10px rgb(32, 32, 32);
+    left: 10px;
+    bottom: 5px;
+  }
+  #text{
+    font-size: 15px;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #d30c26;
+    left: 345px;
+    bottom: 270px;
+  }
+
+
+  .lvlbox{
+    right: 250px;
+    top: 100px;
+  }
+  
+  #lvlcontainer{
+    height: 300px;
+    position: relative;
+    width: 550px;
+    border-radius: 20px;
+    left: 770px;
+    bottom: 450px;
+    box-shadow: 0px 0px 10px 5px black;
+  }
+
+  /* Skils Bars Başlangıcı */
+.skill-bars{
+  margin-left: 20px;
+  margin-bottom: -740px;
+  padding: 25px 30px;
+  width: 450px; background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 5px 20px #d30c26;
+  border-radius: 10px;  
+}
+.bar{ margin: 20px 0; }
+.bar:first-child{ margin-top: 0; }
+.info{ margin-bottom: 0; }
+.info span{
+   font-weight: 500;
+   color: #d30c26;
+   font-size: 17px; opacity: 0;
+   animation: showText .5s 1s linear forwards;
+}
+@keyframes showText {
+   100%{
+       opacity: 1;
+   }
+}
+.progress-line{
+   height: 10px; width: 100%;
+   background: #d30c26; position: relative;
+   transform: scaleX(0); transform-origin: left;
+   border-radius: 10px;
+   box-shadow: inset 0 1px 1px #d30c26,
+   0 0px #d30c26;
+   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line span{
+   height: 100%; position: absolute;
+   border-radius: 10px;
+   transform: scaleX(0);
+   transform-origin: left;
+   background: #d30c26;
+   animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.progress-line span::before{
+   position: absolute; content: "";
+   top:-10px; right: 0; height: 0;
+   width: 0; opacity: 0;
+   border: 7px solid transparent;
+   border-bottom-width: 0;
+   border-right-width: 0;
+   border-top-color: #d30c26;
+   animation: showText2 .5s 1.5s linear forwards;
+}
+.progress-line span::after{
+   position: absolute; 
+   top:-28px; right: 0; font-weight: 500;
+   background: #d30c26;
+   color:#151515; opacity: 0;
+   padding: 1.5px 8px;
+   font-size: 12px;
+   border-radius: 3px;
+   animation: showText2 .5s 1.5s linear forwards;
+}
+@keyframes animate {
+   100%{
+       transform: scaleX(1);
+   }    
+}
+.html span{ 
+   width: 100%; 
+}
+.css span{
+   width: 100%; 
+}
+.js span{
+   width: 100%; 
+}
+
+.html span::after{
+   content: "100%"; 
+}
+.css span::after{
+   content: "100%"; 
+}
+.js span::after{
+   content: "100%"; 
+}
+@keyframes showText2 {
+   100%{
+       opacity: 1;
+   }
+}
+/* Skils Bars Bitişi */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  margin-top: -400px;
+  width: 300px;
+  height: 150px;
+  border-radius: 30px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 30px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-d30c26 {
+  color: #d30c26;
+  text-shadow: 2px 2px 20px #d30c26;
+}
+
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------------------AboutMe-------------------------------------------- */
+
+.about-ind3Picture{
+  right: 250px;
+  top: 100px;
+}
+
+#about-img{
+  height: 450px;
+  position: relative;
+  width: 450px;
+  border-radius: 20px;
+  left: 30px;
+  top: 70px;
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+#about-catalog{
+  top: -240px;
+  left: 100px;
+}
+
+#about-title{
+  font-size: 45px;
+  position: relative;
+  color: #d30c26;
+  text-shadow: 2px 2px 20px #d30c26;
+  left: 500px;
+  bottom: 400px;
+}
+
+#about-text{
+  font-size: 15px;
+  position: relative;
+  color: #ffffff;
+  text-shadow: 0px 0px 2px #d30c26;
+  left: 500px;
+  bottom: 420px;
+}
+
+
+.mp4-about-ind3Picture{
+  right: 250px;
+  top: 100px;
+}
+
+#mp4-about{
+  height: 300px;
+  position: relative;
+  width: 600px;
+  border-radius: 20px;
+  left: 620px;
+  bottom: 400px;
+  box-shadow: 0px 0px 10px 5px #ff002281;
+}
+
+#mp4-catalog{
+  top: -240px;
+  left: 100px;
+}
